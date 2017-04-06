@@ -46,6 +46,10 @@ function Router($stateProvider){
     controller: "showCtrl",
     controllerAs: "vm"
   })
+  .state("contact", {
+    url: '/contact',
+    templateUrl: "/assets/js/ng-views/contact.html"
+  })
 }
 
 function Post($resource){

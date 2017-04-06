@@ -1,6 +1,97 @@
+body {
+  background: #4ABDAC;
+  font-family: 'Bitter', serif;
+}
+.maintitle {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 90px;
+  height: 60px;
+  width: 100%;
+  background-color: #0D7976
+}
+.nav:hover {
+  color: #F7B733;
+}
+#allposts {
+  margin-left: 200px;
+  margin-top: 60px;
+}
+#createbutton {
+  margin-left: 200px;
+  margin-top: 50px;
+  color: #F7B733;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 24px;
+}
+#editbutton {
+  margin-left: 200px;
+  margin-top: 50px;
+  color: #F7B733;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  bottom: 25%;
+}
 #createpost {
   display: none;
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
 }
-h1{
-  color: red
+footer {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+p {
+  color: white
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.about-title {
+  text-align: center;
+  color: white;
+}
+.about-text {
+  text-align: center
+}
+.contact-title {
+  text-align: center;
+  color: white;
+}
+.contact-text {
+  text-align: center
+}
+.welcometitle {
+  text-align: center;
+  color: white;
+}
+.indextitle {
+  color: white;
+  text-align: center;
+}
+.post-title {
+  text-align: center;
+  color: white;
+}
+.post-text {
+  text-align: center;
+}
+.cheater {
+  color: #0D7976;
 }

@@ -1,10 +1,18 @@
-<h1>Hi</h1>
-<div>
+<nav>
+  <a class="nav" data-ui-sref="index">| Posts | </a>
+  <p class="cheater">somespacehere</p>
+  <a class="nav" data-ui-sref="about">| About the Author | </a>
+  <p class="cheater">somespacehere</p>
+  <a class="nav" data-ui-sref="contact">| Contact |</a>
+</nav>
+<h1>Posts</h1>
+<h1 class="indextitle">Posts</h1>
+<div id="allposts">
   <h3 data-ng-repeat="post in vm.posts">
     <a data-ui-sref="show({title: post.title})">{{post.title}}</a>
   </h3>
 </div>
-<p onclick="showPosts()">Create Post</p>
+<p id="createbutton" onclick="showPosts()">Create Post</p>
 <div id="createpost">
 <form ng-submit="vm.create()">
   <input type="text" ng-model="vm.newPost.title" placeholder="title" />

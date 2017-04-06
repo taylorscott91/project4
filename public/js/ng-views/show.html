@@ -1,10 +1,18 @@
-<h2> <a data-ui-sref="index">Go Back</a></h2>
+<nav>
+  <a class="nav" data-ui-sref="index">| Posts | </a>
+  <p class="cheater">somespacehere</p>
+  <a class="nav" data-ui-sref="about">| About the Author | </a>
+  <p class="cheater">somespacehere</p>
+  <a class="nav" data-ui-sref="contact">| Contact |</a>
+</nav>
+
 <div ng-show="vm.post">
   <h2>{{vm.post.title}}</h2>
-  <p>{{vm.post.body}}</p>
+  <h2 class="post-title">{{vm.post.title}}</h2>
+  <p class="post-text">{{vm.post.body}}</p>
 </div>
-
-<div>
+<p id="editbutton" onclick="showPosts()">Edit Post</p>
+<div id="createpost">
   <input type="text" ng-model="vm.post.title" placeholder="title" />
   <input type="text" ng-model="vm.post.body" placeholder="body" />
   <button data-ng-click="vm.update()">edit</button>
