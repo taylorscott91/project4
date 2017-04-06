@@ -1,7 +1,7 @@
 <h1>{{vm.posts.length}} Posts</h1>
 <div>
   <h3 data-ng-repeat="post in vm.posts">
-    <a data-ui-sref="show({name: post.name})">{{post.name}}</a>
+    <a data-ui-sref="show({title: post.title})">{{post.title}}</a>
   </h3>
 </div>
 
