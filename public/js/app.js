@@ -66,6 +66,7 @@ function indexController ($state, Post) {
 
 function showController($state, $stateParams, Post){
   this.post = Post.get({title: $stateParams.title})
+
   this.update = function(){
     this.post.$update({title: $stateParams.title})
   }
@@ -74,4 +75,8 @@ function showController($state, $stateParams, Post){
       $state.go("index")
     })
   }
+}
+
+function showPosts() {
+  document.getElementById("createpost").style.display = "block";
 }

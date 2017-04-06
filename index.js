@@ -24,8 +24,8 @@ app.get("/api/posts", function(req, res){
   });
 });
 
-app.get("/api/posts/:name", function(req, res){
-  Post.findOne({name: req.params.name}).then(function(post){
+app.get("/api/posts/:title", function(req, res){
+  Post.findOne({title: req.params.title}).then(function(post){
     res.json(post)
   });
 });
@@ -36,14 +36,14 @@ app.post("/api/posts", function(req, res){
   })
 });
 
-app.delete("/api/posts/:name", function(req, res){
-  Post.findOneAndRemove({name: req.params.name}).then(function(){
+app.delete("/api/posts/:title", function(req, res){
+  Post.findOneAndRemove({title: req.params.title}).then(function(){
     res.json({ success: true })
   });
 });
 
-app.put("/api/posts/:name", function(req, res){
-  Post.findOneAndUpdate({name: req.params.name}, req.body, {new: true}).then(function(post){
+app.put("/api/posts/:title", function(req, res){
+  Post.findOneAndUpdate({title: req.params.title}, req.body, {new: true}).then(function(post){
     res.json(post)
   });
 });

@@ -1,12 +1,14 @@
-<h1>{{vm.posts.length}} Posts</h1>
+<h1>Hi</h1>
 <div>
   <h3 data-ng-repeat="post in vm.posts">
     <a data-ui-sref="show({title: post.title})">{{post.title}}</a>
   </h3>
 </div>
-
+<p onclick="showPosts()">Create Post</p>
+<div id="createpost">
 <form ng-submit="vm.create()">
   <input type="text" ng-model="vm.newPost.title" placeholder="title" />
-  <input type="text" ng-model="vm.newPost.body" placeholder="body" />
+  <textarea type="text" ng-model="vm.newPost.body" placeholder="body"></textarea>
   <button type="submit">Post</button>
 </form>
+</div>
