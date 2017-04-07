@@ -17,7 +17,7 @@ nav {
   width: 100%;
   background-color: #0D7976
 }
-.nav:hover {
+a:hover {
   color: #F7B733;
 }
 #allposts {
@@ -68,7 +68,9 @@ a {
   color: white;
 }
 .about-text {
-  text-align: center
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .contact-title {
   text-align: center;
@@ -91,7 +93,15 @@ a {
 }
 .post-text {
   text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .cheater {
   color: #0D7976;
+}
+img {
+  margin-left: 45%;
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
 }
